@@ -1,0 +1,30 @@
+{
+  "name": "active-box",
+  "version": "1.0.0",
+  "description": "Your Favorite One Page Multi Purpose Template",
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "source": "./src/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenZorRUS/FE36-Zubok-CourseProject.git"
+  },
+  "author": "Roman Zubok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenZorRUS/FE36-Zubok-CourseProject/issues"
+  },
+  "homepage": "https://github.com/RenZorRUS/FE36-Zubok-CourseProject#readme",
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-google": "^0.14.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.54.5"
+  }
+}

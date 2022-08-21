@@ -1,0 +1,55 @@
+
+
+// Variables
+$_Raleway: 'Raleway', sans-serif;
+
+// Mixins
+@mixin h1_text {
+    font-family: $_Raleway;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.687rem;
+    text-transform: uppercase;
+    color: $_white;
+}
+
+@mixin h2_text {
+    font-family: $_Raleway;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    color: $_white;
+}
+
+@mixin h3_text {
+    font-family: $_Raleway;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.187rem;
+    color: $_white;
+}
+
+@mixin h4_text {
+    font-family: $_Raleway;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: $_white;
+}
+
+@mixin h5_text {
+    font-family: $_Raleway;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.312rem;
+    color: $_white;
+}
+
+@mixin h6_text {
+    font-family: $_Raleway;
+    font-weight: 700;
+    font-size: 0.812rem;
+    line-height: 0.937rem;
+    color: $_white;
+}
