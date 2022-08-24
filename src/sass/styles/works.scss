@@ -4,17 +4,17 @@
 }
 
 .item {
-    max-width: 370px;
+    max-width: 380px;
+    position: relative;
 
     &__img {
-        position: relative;
         overflow: hidden;
-        object-fit: cover;
-        object-position: center;
-
+        
         img {
             display: block;
             max-width: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         &::after {
@@ -26,17 +26,42 @@
             top: 0;
             left: 0;
             background-color: rgba(255, 67, 67, 0.8);
+            opacity: 0;
+            transition: 0.25s;
         }
     }
 
-    // &__hover-text {
+    &__hover-text {
+        position: absolute;
+        width: 100%;
+        top: 38.5%;
+        left: 0;
+        opacity: 0;
+        transition: 0.25s;
 
+        .hover-text__title {
+            margin-bottom: 20px;
+            text-align: center;
+            @include h4_text;
+        }
+        .hover-text__description {
+            text-align: center;
+            @include h5_text;
+        }
+    }
 
-    //     &__title {
+    &:hover {
+        .item__hover-text {
+            opacity: 1;
+        }
+        .item__img::after {
+            opacity: 1;
+        }
+    }
 
-    //     }
-    //     &__description {
-
-    //     }
-    // }
+    &:active {
+        .item__img::after {
+            background-color: $_dark_red;
+        }
+    }
 }
